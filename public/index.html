@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1a87fbbb7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h2>Code Tutor</h2>
+      <ul class="big-src-ul">
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Promotions</a></li>
+        <li><a href="#">Technologies</a></li>
+        <li><button onclick="openPopup()">Add New Blog</button></li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+      </ul>
+      <div class="hamberger-menu">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-toggle-icon">&#9776;</label>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">Technologies</a></li>
+            <li><a href="#">About</a></li>
+            <li><button onclick="openPopup()">Add New Blog</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="hero">
+          <img src="assets/minimalist.png" alt="hero image">
+          <p class="sm">In Label</p>
+          <h2>This is the title of the blog</h2>
+          <p><b>By</b> Ridho Satriawan</p>
+        </div>
+        <div class="primary-heading latest">
+          <p>Latest Posts</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="blog-posts">
+          <div class="blog-post">
+            <div class="blog-head">
+              <div class="img">
+                <img src="assets/Top-Technology-Blogs.jpg" alt="image">
+              </div>
+              <div class="titles">
+                <p>In Label</p>
+                <h3>This is the Title 1</h3>
+                <p><b>By</b> Ridho Satriawan</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                quibusdam cumque sint facilis autem error tenetur at pariatur,
+                corrupti deserunt Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Dolorum magnam, pariatur fugit rerum facere et
+                molestias doloribus consequuntur aliquam quasi reiciendis
+                expedita eos qui culpa nisi, autem consectetur tempore quo.!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellat illo fuga quam iusto odio. Maiores quisquam in
+                cupiditate eum praesentium velit, minus assumenda eos fuga alias
+                doloremque eligendi accusamus at?
+              </div>
+              <p class="date">22 August 2022</p>
+            </div>
+          </div>
+          <div class="blog-post">
+            <div class="blog-head">
+              <div class="img">
+                <img src="assets/images.jpg" alt="image">
+              </div>
+              <div class="titles">
+                <p>In Label</p>
+                <h3>This is the Title 1</h3>
+                <p><b>By</b> Ridho Satriawan</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                quibusdam cumque sint facilis autem error tenetur at pariatur,
+                corrupti deserunt Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Dolorum magnam, pariatur fugit rerum facere et
+                molestias doloribus consequuntur aliquam quasi reiciendis
+                expedita eos qui culpa nisi, autem consectetur tempore quo.!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellat illo fuga quam iusto odio. Maiores quisquam in
+                cupiditate eum praesentium velit, minus assumenda eos fuga alias
+                doloremque eligendi accusamus at? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Illo, cum tempora. Mollitia
+                eligendi, repudiandae numquam dolor labore perferendis quis
+                tempora, nam sed libero similique assumenda a quisquam minima
+                consectetur illo.
+              </div>
+              <p class="date">22 August 2022</p>
+            </div>
+          </div>
+          <div class="blog-post">
+            <div class="blog-head">
+              <div class="img"></div>
+              <div class="titles">
+                <p>In Label</p>
+                <h3>This is the Title 1</h3>
+                <p><b>By</b> Ridho Satriawan</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                quibusdam cumque sint facilis autem error tenetur at pariatur,
+                corrupti deserunt Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Dolorum magnam, pariatur fugit rerum facere et
+                molestias doloribus consequuntur aliquam quasi reiciendis
+                expedita eos qui culpa nisi, autem consectetur tempore quo.!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellat illo fuga quam iusto odio. Maiores quisquam in
+                cupiditate eum praesentium velit, minus assumenda eos fuga alias
+                doloremque eligendi accusamus at?
+              </div>
+              <p class="date">22 August 2022</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular">
+        <section>
+          <div class="primary-heading">Most Popular</div>
+          <ul class="side-popular">
+            <li>
+              <div class="img"></div>
+              <div class="content">
+                <h3>Title 1</h3>
+                <p>22 August 2022</p>
+              </div>
+            </li>
+            <li>
+              <div class="img"></div>
+              <div class="content">
+                <h3>Title 1</h3>
+                <p>22 August 2022</p>
+              </div>
+            </li>
+            <li>
+              <div class="img"></div>
+              <div class="content">
+                <h3>Title 1</h3>
+                <p>22 August 2022</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="primary-heading">Categories</div>
+          <ul class="side-category">
+            <li>
+              <a href="#">> Label 1</a>
+              <p>(1)</p>
+            </li>
+            <li>
+              <a href="#">> Label 2</a>
+              <p>(2)</p>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <footer>Copyright@CodeTutor</footer>
+
+    <div class="popup" id="popup">
+        <p class="cross" onclick="closePopup()">&#10006;</p>
+        <h3>Add New Blog</h3>
+        <input type="text" id="title" placeholder="Enter blog title">
+        <input type="file" id="file">
+        <div class="editor-container">
+            <div id="editor"></div>
+            <button class="primary-heading save-btn" id="save">Save</button>
+            <button class="primary-heading cancel-btn" id="cancel">Cancel</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
