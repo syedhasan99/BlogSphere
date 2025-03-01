@@ -52,9 +52,12 @@ saveBtn.addEventListener("click", async () => {
   formData.append("content", blogText);
   formData.append("file", selectedFile); // Attach the file
 
+  let token = localStorage.getItem('token');
+
   try {
     const response = await fetch("http://localhost:3000/add-post", {
       method: "post",
+      headers: {"Authorization": token},
       body: formData,
     });
     const result = await response.json();
